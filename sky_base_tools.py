@@ -1,7 +1,12 @@
 import mcpi.minecraft as minecraft
 import mcpi.block as block
-import mcpi.minecraftstuff as minecraftstuff
 import time
+
+# minecraftstuff is a module built by Martin O'hanlon
+# Download minecraft stuff from here:
+# https://raw.githubusercontent.com/martinohanlon/minecraft-stuff/master/minecraftstuff.py
+# Put a copy of it in the folder with this script.
+import minecraftstuff as minecraftstuff
 
 mc = minecraft.Minecraft.create()
 mcd = minecraftstuff.MinecraftDrawing(mc)
@@ -59,6 +64,5 @@ def make_tunnel(block, r=4):
     return
 
 if __name__ == "__main__":
-
     print (pos)
-    #make_room(pos.x, pos.y + 4, pos.z, 8, (95, 11))
+    make_tunnel((5, 1), r=3)
